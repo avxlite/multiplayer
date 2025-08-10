@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplayer Canvas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="colorMenu">
+  <input type="color" id="colorPicker">
+  <br><label for="penSize">Pen Size</label>
+  <input type="range" id="penSize" min="2" max="50" value="10">
+</div>
+<div id="chatWindow">
+  <div id="chatMessages"></div>
+  <input type="text" id="chatInput" placeholder="Type something..." maxlength="200">
+  <button id="sendButton">Send</button>
+</div>
+
+  <canvas id="canvas" width="800" height="600"></canvas>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
